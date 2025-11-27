@@ -8,10 +8,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        .tech-logo {
+        height: 30px;          /* Adjust size as needed */
+        width: auto;
+        object-fit: contain;
+        filter: grayscale(20%);
+        transition: transform 0.2s ease, filter 0.2s ease;
+        }
+        .tech-logo:hover {
+        transform: translateY(-3px);
+        filter: grayscale(0%);
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -36,7 +49,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container text-center">
-            <h1 class="display-5">Hi, I'm Kenith</h1>
+            <h2 class="display-5">Hi, I'm Kenith</h1>
             <p class="lead">Future Product Developer and Business Analyst</p>
         </div>
     </section>
@@ -49,11 +62,52 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <p>Hello! I'm currently an undergraduate at Singapore Management University (SMU), major in Information Systems and specialising in Product Development and Buisness Analytics.</p>
-                    <p><b>My Dream</b>: To become a (fullstack) developer that can create meaningful software and applications that helps people be more efficient in their daily lifes</p>
+                    <br>
+                    <p>Technology can transform lives, but only when it's used thoughtfully and ethically. I'm a curious problem-solver who loves learning new tools and applying them to remove bottlenecks, automate tedious work, and improve everyday processes. 
+                        I'm focused on building resilient systems that can adapt to an uncertain world—and I enjoy sharing what I build so others can grow and adapt with me.
+                    </p>
+                    <br>
+                    <h4>My Dream:</h4> 
+                    <div>
+                        Become a (fullstack) software developer that can create meaningful software and applications that helps people be more efficient in their daily lifes<br>
+                        Use machine learning models to analyse and improve efficiency in daily life tasks
+                    </div>
                 </div>
             </div>
-            <div>
-                
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h4 class="mb-4 mt-3">Technical Stack</h3>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                            alt="Python"
+                            class="tech-logo" />
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                            alt="JavaScript"
+                            class="tech-logo" />
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                            alt="TypeScript"
+                            class="tech-logo" />
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                            alt="React"
+                            class="tech-logo" />
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
+                            alt="Next.js"
+                            class="tech-logo" />
+                        <img src="https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-ar21.svg"
+                            alt="Flask"
+                            class="tech-logo" />
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" 
+                            alt="MYSQL"
+                            class="tech-logo"/>
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
+                            alt="Docker"
+                            class="tech-logo" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                            alt="AWS"
+                            class="tech-logo" />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
