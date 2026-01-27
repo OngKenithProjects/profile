@@ -21,30 +21,11 @@
         filter: grayscale(0%);
         }
     </style>
+    <script src="navbar.js"></script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-root" data-active="projects"></div>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -71,6 +52,7 @@
                         <!-- <img class="card-img-top" alt="Project 1"> -->
                         <div class="card-body">
                             <h5 class="card-title">SCIS Timetable and Enrollment Planning System (STEPS)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Web Development</h6>
                             <p class="card-text">Web application for SCIS students to plan their unviersity timetable</p>
                             <div class="row">
                                 <div class="col-lg-8">
@@ -91,6 +73,7 @@
                         <!-- <img class="card-img-top" alt="Project 2"> -->
                         <div class="card-body">
                             <h5 class="card-title">Nimbus</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Web Development</h6>
                             <p class="card-text">Drone food delivery service application, combining Outsystems as middleman for payment transactions. Based on a Microservice architecture</p>
                             <div class="row">
                                 <div class="col-lg-8">
@@ -107,12 +90,13 @@
                     </div>
                 </div>
             </div>
-            <h4 class="text-center mb-4 mt-4"> Personal Projects - Web Development</h4>
+            <h4 class="text-center mb-4 mt-4"> Personal Projects</h4>
             <div class="row justify-content-evenly">
                 <div class="col-md-4 mb-4">
                     <div class="card shadow">
                         <div class="card-body">
                             <h5 class="card-title">Remake 2048</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Web Development</h6>
                             <p class="card-text">Attempt to recreate the game "2048"</p>
                             <div class="row">
                                 <div class="col-lg-8">
@@ -132,6 +116,7 @@
                     <div class="card shadow">
                         <div class="card-body">
                             <h5 class="card-title">EZResumeGen</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Web Development</h6>
                             <p class="card-text">Resume Management and Generation with Ant Design Library for styling</p>
                             <div class="row">
                                 <div class="col-lg-8">
@@ -148,19 +133,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <h4 class="text-center mb-4 mt-4"> Personal Projects - Analytics</h4>
-            <div class="row justify-content-evenly">
                 <div class="col-md-4 mb-4">
                     <div class="card shadow">
                         <div class="card-body">
                             <h5 class="card-title">Money Tracking (Coming Soon)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Analytics</h6>
                             <p class="card-text">Simple Excel to track my own daily expense</p>
                             <a class="btn btn-secondary" style="pointer-events: none">More Info</a>
                             <a class="btn btn-secondary" style="pointer-events: none">Download Template</a>
                         </div>
                     </div>
                 </div>
+            </div>          
         </div>
     </section>
 </body>

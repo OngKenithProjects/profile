@@ -21,36 +21,17 @@
         filter: grayscale(0%);
         }
     </style>
+    <script src="navbar.js"></script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-root" data-active="about"></div>
 
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container text-center">
             <h2 class="display-5">Hi, I'm Kenith</h1>
-            <p class="lead">Future Product Developer and Business Analyst</p>
+            <p class="lead">Future Inspired Product Developer and Business Analyst</p>
         </div>
     </section>
 
@@ -79,7 +60,7 @@
             <!-- Tech Stack -->
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h4 class="mb-4 mt-3">Technical Stack</h3>
+                    <h4 class="mb-4 mt-3">Technical Stack</h4>
                     <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
                             alt="Python"
@@ -117,29 +98,107 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-2">Contact Me</h2>
-            <div class="row justify-content-center mb-4">
+            <br>
+            <!-- Certification -->
+            <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    Want to know more about me? Feel free to visit some of these social media sites!
+                    <h4 class="mb-4 mt-3">Certifications, Achievements, Awards</h4>
+                    <div class="justify-content-center align-items-center gap-4">
+                        <div class="accordion" id="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    SALESFORCE Certified Buisness Analyst
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        The Salesforce Certified Business Analyst program is designed for Business Analysts with Salesforce experience. The successful candidate understands business needs, captures requirements, and collaborates with stakeholders to support the development of Salesforce solutions which drive business improvements
+                                        <br><br><strong>Credential ID</strong>: 7394466
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Google Data Analytics Specialisation
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        Coursera course by Google that includes hands-on, practice-based assessments and are designed to prepare them for introductory-level roles in Data Analytics
+                                        <br><br><strong>Credential ID</strong>: RMLG8UUH86HE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Google Advanced Data Analytics Specialisation
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        Coursera course by Google that includes hands-on, practice-based assessments and are designed to prepare them for advanced roles in data analytics and entry-level role in data science
+                                        <br><br><strong>Credential ID</strong>: SL02BV567Z2C
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Google IT Automation with Python Specialisation
+                                </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        Coursera course by Google designed to teach learners how to write code in Python, with a special focus on how this applies to automating tasks in the world of IT support and system administration
+                                        <br><br><strong>Credential ID</strong>: CUL2TC7MAJX
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Google Project Management Specialisation
+                                </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        Coursera course by Google that includes hands-on, practice-based assessments and are designed to prepare them for introductory-level role in Project Management
+                                        <br><br><strong>Credential ID</strong>: YDPWCBZ8322Z
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Google UX Design Specialisation
+                                </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        Coursera course by Google that includes hands-on, practice-based assessments and are designed to prepare them for introductory-level role in UX design
+                                        <br><br><strong>Credential ID</strong>: YTWZ8YRRHWSX
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Google Cybersecurity Specialisation
+                                </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        Coursera course by Google that includes hands-on, practice-based assessments and are designed to prepare them for entry-level role in Cybersecurity
+                                        <br><br><strong>Credential ID</strong>: JDQ04MN98BPVP
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
-                <a href="https://sg.linkedin.com/in/kenith-ong-42a88152">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-                    alt="Linkedin"
-                    class="tech-logo" />
-                </a>
-                <a href="https://github.com/OngKenithProjects">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                    alt="Github"
-                    class="tech-logo" />
-                </a>
             </div>
         </div>
     </section>
@@ -150,3 +209,5 @@
             <p>&copy; 2025 My Portfolio. All rights reserved.</p>
         </div>
     </footer> -->
+</body>
+</html>

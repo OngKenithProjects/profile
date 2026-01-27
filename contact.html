@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .tech-logo {
+        height: 20px;          /* Adjust size as needed */
+        width: auto;
+        object-fit: contain;
+        filter: grayscale(20%);
+        transition: transform 0.2s ease, filter 0.2s ease;
+        }
+        .tech-logo:hover {
+        transform: translateY(-3px);
+        filter: grayscale(0%);
+        }
+    </style>
+    <script src="navbar.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-root" data-active="contact"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h2 class="display-5">Hi There!</h1>
+            <p class="lead">I would love to connect with you!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <!-- <h2 class="text-center mb-2">Contact Me</h2> -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-center">
+                    Want to know more about me? Feel free to visit some of these social media sites!
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+                <a href="https://sg.linkedin.com/in/kenith-ong-42a88152">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                    alt="Linkedin"
+                    class="tech-logo" 
+                    style="width: 40px; height: 40px;"/>
+                </a>
+                <a href="https://github.com/OngKenithProjects">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    alt="Github"
+                    class="tech-logo" 
+                    style="width: 40px; height: 40px;"/>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
